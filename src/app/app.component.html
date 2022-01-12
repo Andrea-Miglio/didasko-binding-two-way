@@ -1,4 +1,27 @@
-<hello name="{{ name }}"></hello>
+
 <p>
-  Start editing to see some magic happen :)
+ {{titolo}}
 </p>
+<input #rif_nome type="text" placeholder="Il tuo nome" (input)="inputValori()"/>
+<input #rif_cognome type="text" placeholder="Il tuo cognome" (input)="inputValori()"/>
+<input #rif_eta type="text" placeholder="La tua eta" (input)="inputValori()"/>
+<button (click)="pulisciValori()">Invia</button>
+<br><br>
+<table border:1>
+  <tr>
+    <th width="150px">Nome</th>
+    <th width="150px">Cognome</th>
+    <th width="150px">Eta</th>
+  </tr>
+  <tr>
+    <td>
+      {{nome}}
+    </td>
+    <td>
+      {{cognome}}
+  </td>
+  <td>
+      {{eta}}
+  </td>
+  </tr>
+</table>
